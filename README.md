@@ -8,7 +8,9 @@
 <!-- badges: end -->
 
 cfbratings is a package that provides rating methods for college
-football teams.
+football teams. Using statistical methods, cfbratings produces different
+ratings metrics for analyzing and comparing college football teams using
+in-season data.
 
 ## Installation
 
