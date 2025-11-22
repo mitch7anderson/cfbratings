@@ -1,6 +1,6 @@
 Package: cfbratings
 Title: Reproducible Methods for Team Evaluation in College Football
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: 
     person("Anderson", "Mitchell", 
     email = "mitch7anderson@tamu.edu", 
