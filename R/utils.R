@@ -19,10 +19,12 @@
 #' @return A cleaned data frame with standardized types.
 #' @keywords internal
 check_games_df <- function(games) {
+  # check that games is a valid data frame
   if (!is.data.frame(games)) {
     stop("'games' must be a data.frame or tibble.", call. = FALSE)
   }
 
+  # Ensure all required columns are in games
   required_cols <- c(
     "season", "week",
     "home_team", "away_team",
