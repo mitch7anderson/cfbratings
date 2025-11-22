@@ -120,11 +120,15 @@ colley_solve_system <- function(C, b) {
 colley_output_table <- function(team_index, ratings) {
   teams <- names(team_index)
 
-  tibble::tibble(
+  out <- data.frame(
     team = teams,
-    rating = ratings
-  ) |>
-    dplyr::arrange(dplyr::desc(.data$rating))
+    rating = ratings,
+    stringsAsFactors = FALSE
+  )
+
+  # sort by rating descending
+  out <- out[order(-out$rating), , drop = FALSE]
+  tibble::as_tibble(out)
 }
 
 #' Fit Colley ratings
